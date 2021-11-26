@@ -3,11 +3,92 @@ body{
   padding: 0;
   background-color: black;
 }
+ /* hráč */
+.player-box {
+  position: fixed;
+  top: 5vw;
+  left: 10vw;
+}
 
+.player {
+  width: 11vw;
+  border: green solid 3px;
+
+}
+#vs{
+    position: fixed;
+    width: 25vw;
+    height: 25vh;
+    z-index: 1;
+    top: 10vw;
+    left: 75vh;
+
+}
+
+/* celkové prostředí */
 .main-container{
-  text-align: "center";
   width: 100vw;
   height: 100vh;
 
-  background-color: white;
+
+}
+
+.backround{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-image: url("assets/bcg2.gif");
+  filter: opacity(65%) blur(1.5px);
+  z-index: -1;
+
+}
+.spells {
+
+  position: relative;
+  right: 4vw;
+  margin-top: 20px;
+}
+
+.spells button {
+  border: solid black 10px;
+  margin: 0 10px;
+
+  box-shadow: 10px 10px 10px 10px rgba(20,15,21,0.5);
+}
+
+.spells img {
+  width: 6vw;
+  height: 6vw;
+
+}
+
+
+
+
+.enemy {
+  position: fixed;
+  top: 5vw;
+  left:70vw;
+}
+
+.enemy img {
+  width: 20vw;
+  border: solid 3px red;
+}
+
+.log{
+  border: green solid 3px;
+  background-color: grey;
+  filter: opacity(50%);
+  position: fixed;
+  right: 6vw;
+  bottom: 5vh;
+  width: 25vw;
+  height: 25vh;
+  overflow: auto;
+
+
 }
